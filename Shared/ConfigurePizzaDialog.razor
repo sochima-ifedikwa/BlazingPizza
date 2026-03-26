@@ -19,7 +19,7 @@
         <div class="dialog-buttons">
             <button class="btn btn-secondary mr-auto" @onclick="OnCancel">Cancel</button>
             <span class="mr-center">
-                <span class="price">@(Pizza.GetFormattedTotalPrice())</span>
+                <span class="price">$@(Pizza.GetFormattedTotalPrice())</span>
             </span>
             <button class="btn btn-success ml-auto" @onclick="OnConfirm">Order ></button>
         </div>
