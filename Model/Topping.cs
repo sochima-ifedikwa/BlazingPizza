@@ -1,4 +1,6 @@
-﻿namespace BlazingPizza
+﻿using System.Globalization;
+
+namespace BlazingPizza
 {
     public class Topping
     {
@@ -8,6 +10,6 @@
 
         public decimal Price { get; set; }
 
-        public string GetFormattedPrice() => Price.ToString("0.00");
+        public string GetFormattedPrice() => Price.ToString("C", CultureInfo.GetCultureInfo("en-US"));
     }
 }
